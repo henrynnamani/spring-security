@@ -1,20 +1,13 @@
 package com.graey.spring_security.model;
-
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
+import jakarta.persistence.*;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Component
-@Entity(name="users")
+@Table(name = "users")
+@Entity
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String username;
     private String password;

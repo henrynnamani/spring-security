@@ -1,5 +1,6 @@
 package com.graey.spring_security.controller;
 
+import com.graey.spring_security.model.RegisterRequest;
 import com.graey.spring_security.model.User;
 import com.graey.spring_security.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
